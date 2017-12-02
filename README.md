@@ -1,7 +1,7 @@
 # neurosift
 Harvest voxels by proximity to input. Requires Greasemonkey (Firefox add-on).
 
-To install Greasemonkey script, you must first upload the nsv1.user.js script to a server and navigate to the file in Firefox. Greasemonkey will recognize the script and prompt you to install it. Once it's been installed into Greasemonkey, it can be quickly edited by selecting it from the Greasemonkey menu (little monkey face to right of the address bad).
+To install Greasemonkey script, you must first upload the nsv1.user.js script to a server and navigate to the file in Firefox. Greasemonkey will recognize the script and prompt you to install it. Once it's been installed into Greasemonkey, it can be quickly edited by selecting it from the Greasemonkey menu (little monkey face to right of the address bar).
 
 For the time being, if you don't have access to a server to upload the script yourself, you can use [this link](http://sfcstech.x10.mx/nsv1.user.js).
 
