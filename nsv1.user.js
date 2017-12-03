@@ -59,7 +59,7 @@ setTimeout(
 					var line = new Array();
 					var cs = row.querySelectorAll( "td" );
 					for ( var i = 1; i < cs.length; i++ )
-					line.push( cs[i].textContent );
+						line.push( cs[i].textContent );
 					if ( dist3( ORIG, line ) <= THRESH )
 					{
 						line.push( " table " + cs[0].textContent );
