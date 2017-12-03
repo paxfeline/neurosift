@@ -6,11 +6,12 @@
 // ==/UserScript==
 
 /* Usage notes:
-	This script will harvest voxels from a table of activation neurosynth study.
 
-	First set up the ORIG and THRESH parameters.
-		ORIG - The central voxel.
-		THRESH - The radius around the ORIG voxel to check for.
+	- This script will harvest voxels from a table of activations discussed in a paper in the Neurosynth repository.
+	
+	- Before running, set ORIG and THRESH to desired values.
+	  - ORIG - The input voxel.
+	  - THRESH - The radius around ORIG to check.
 
 	To be safe, the script should be run in a Private Window.
 	This is because neurosynth remembers where you are in a table
@@ -18,14 +19,11 @@
 	harvest data only from that page on.
 	By using a Private Window, the studies will load with page 1 of the table visible. */
 
-// Change values:
+// Set to desired values:
 
-var ORIG = [ 0, 0, 0 ];
+var ORIG = [ -48, 40, -6 ];
 
 var THRESH = 8;
-
-
-
 
 function dist3( ar1, ar2 )
 {
@@ -83,6 +81,7 @@ setTimeout(
 		if ( flag )
 		{
 			var ta = document.createElement( "textarea" );
+			ta.style.height = "10em";
 			ta.innerHTML = o.join( "\n" );
 			document.body.appendChild( ta );
 		}
