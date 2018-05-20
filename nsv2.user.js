@@ -77,7 +77,7 @@ setTimeout(
 			{
 
 				if ( found[1] > 0 && ( !lastStart || lastStart != found[1] ) )
-					{
+				{
 					lastStart = found[1];
 
 					// iterate through each row in the table
@@ -140,9 +140,9 @@ setTimeout(
 
 /* 
 	dist3 takes two inputs,
-		each an arry with [at least] 3 elements; call them
-		ar1 = [ x1, y1, z1 ],
-		ar2 = [ x2, y2, z2 ]
+		each an arry with 3 elements, i.e.
+			ar1 = [ x1, y1, z1 ],
+			ar2 = [ x2, y2, z2 ]
 	Returns:
 		sqrt( (x1 - x2)^2 + (y1 - y2)^2 + (z1 - z2)^2 )
 */
